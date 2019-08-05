@@ -1,33 +1,168 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css?family=Flamenco|Sirin+Stencil&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "arial";
+    
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
+li {
+    cursor: pointer;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.container {
+    width: 73%;
+    height: 100px;
+    margin: 3rem auto;
+
 }
 
-.App-link {
-  color: #61dafb;
+a {
+    color: #fff;
+    text-decoration: none;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.products-container {
+    width: 70%;
+    height: auto;
+    margin: 3rem auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 1rem;
+}
+
+.product-box {
+    height: 300px;
+    width: 250px;
+    text-align: center;
+    box-shadow: 1px 0 9px 3px rgba(0, 0, 0, .2);
+}
+
+.product-box img {
+    height: 70%;
+}
+
+.product-box h3 {
+    padding: 8px;
+    background: rgb(30, 140, 173);
+    color: #fff;
+    font-weight: lighter;
+}
+
+.item-details {
+    width: 80%;
+    height: auto;
+    box-shadow: 1px 0 9px 3px rgba(0 , 0, 255, .3);
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+}
+
+.explain {
+   display: flex;
+   flex: 1;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   background: #ccc;
+}
+
+.item-details img {
+    height: 300px;
+    width: 300px;
+    flex: 1;
+}
+
+.item-details h4 {
+    padding: 10px;
+}
+
+strong {
+    text-transform: capitalize;
+}
+
+.back-img {
+    background: url(
+    "https://images.pexels.com/photos/1260578/pexels-photo-1260578.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940") no-repeat center/cover;
+    height: 60vh;
+    width: 73%;
+    margin: 2rem auto;
+    color: #fff;
+    border-radius: 12px;
+}
+
+.back-img p {
+    padding: 1rem 3rem;
+}
+
+.back-img h1 {
+    padding: 5rem 0 0 3rem;
+}
+
+.back-img button {
+    margin: 0 0 1rem 3rem;
+}
+
+/* .products-page {
+    width: 100%;
+    height: 100%;
+    background: url('https://images.pexels.com/photos/1260584/pexels-photo-1260584.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940') no-repeat center/cover;
+   
+} */
+
+
+/* ==================== HOMEPAGE STYLING ==================================== */
+
+.homepage {
+    background: url('https://images.pexels.com/photos/1260584/pexels-photo-1260584.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940') no-repeat center/cover;
+    height: calc(100vh - 60px);
+    width: 100%;
+    border-top: 2px solid #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.homepage h1 {
+    text-align: center;
+    font-family: 'Flamenco', cursive;
+    font-family: 'Sirin Stencil', cursive;
+    font-size: 3rem;
+    color: #fff;
+    text-shadow: 2px 2px black;
+}
+
+.contents {
+    width: 60%;
+    margin: 2rem auto;
+    background: rgba(0, 0, 0, .5);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.homepage p {
+    color: #fff;
+    margin: 2rem 0;
+    padding: 0 0 2rem 10px;
+    line-height: 19px;
+}
+
+.contents button {
+    height: 40px;
+    width: 150px;
+    border: 1px solid #fff;
+    margin: 0 0 1rem 0;
+    background: #000;
+    color: #fff;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.contents button:hover {
+    background: #fff;
+    color: #000;
+    font-size: bold;
 }
